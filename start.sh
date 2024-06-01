@@ -1,4 +1,6 @@
-source "./colors.sh"
+file_name=`basename $0`
+bundle_dir=`dirname $(readlink -f ${file_name})`
+source "${bundle_dir}/.colors.sh"
 li_dir=`pwd`
 local_url="http://localhost:9663/"
 
